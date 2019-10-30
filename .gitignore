@@ -4,7 +4,7 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-Assets/DownloadedGameAssets/
+Assets/DownloadedGameAssets*
 
 # Visual Studio cache directory
 .vs/
