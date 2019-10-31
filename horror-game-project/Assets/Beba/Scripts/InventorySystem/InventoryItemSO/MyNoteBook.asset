@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66730d49930778146888aafd9ab2e682, type: 3}
+  m_Name: MyNoteBook
+  m_EditorClassIdentifier: 
+  id: 28789c0cd1e1238439794db678f5d09e
+  name: My Notebook
+  image: {fileID: 0}
+  description: 'My notebook. I guess I can keep a journal of what important with this.
+
+
+
+
+    RMB click to read notebook.'
+  quantity: 3
+  isUsable: 1
+  isBattleItem: 0
