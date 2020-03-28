@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1944955043}
   - component: {fileID: 4544871189336387452}
   - component: {fileID: 2120904992}
+  - component: {fileID: 7414878898288480043}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Player
@@ -191,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05a088048dfd7b4ea020638c8163c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseCursor: {fileID: 0}
   currentPlayerData:
     health: 4
     playerPosition:
@@ -217,8 +219,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97d8e62f98afea47982ede5f7ada999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsList:
+  itemsList: []
+  startingItemList:
   - {fileID: 11400000, guid: 28789c0cd1e1238439794db678f5d09e, type: 2}
+  - {fileID: 11400000, guid: 6ad4efa26127141479cfab0bcefc1ac4, type: 2}
+  itemsDatabase: {fileID: 11400000, guid: 6377ef22c75b3b245a212a4b3ea3f9fa, type: 2}
 --- !u!114 &4544871189336387452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +340,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &7414878898288480043
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8069291741790661952}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.5, y: 1, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8069291741790661954
 GameObject:
   m_ObjectHideFlags: 0

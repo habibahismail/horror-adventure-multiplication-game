@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 28789c0cd1e1238439794db678f5d09e
   name: My Notebook
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: c9f64e73e4f79b04ab1da1d667a85f72, type: 3}
   description: 'My notebook. I guess I can keep a journal of what important with this.
 
 
 
 
     RMB click to read notebook.'
-  quantity: 3
+  quantity: 1
   isUsable: 1
   isBattleItem: 0

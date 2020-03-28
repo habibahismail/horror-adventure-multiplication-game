@@ -5,14 +5,6 @@ using UnityEngine.AI;
 
 namespace gameBeba
 {
-    /* to-do
-     * 
-     * convert this class to abstract class. another class for prefectbear and student bunny.
-     * implement patrolling in base class
-     * 
-     * refactor code
-     */
-
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private float distance;

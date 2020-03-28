@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3122492250576921121}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.07, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 3122492250576895491}
@@ -92,9 +92,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3122492250576895491}
   - component: {fileID: 3122492250569658793}
-  - component: {fileID: 3122492250577020107}
   - component: {fileID: 1520339696}
   - component: {fileID: 1520339697}
+  - component: {fileID: 166399058076168160}
   m_Layer: 0
   m_Name: Zombunny
   m_TagString: Enemy
@@ -136,23 +136,6 @@ Animator:
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3122492250577020107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3122492250576921123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5461c1646a1ca194eaf229dea0514d82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0
-  startChasingDistance: 8
-  moveSpeed: 2.8
-  eyeMaterialEnabled: {fileID: 2100000, guid: 970ba34de172eff40a28f998a5122ace, type: 2}
-  eyeMaterialDisabled: {fileID: 2100000, guid: 52e32544c191d5b43928d2d1ec52ade8, type: 2}
 --- !u!65 &1520339696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -176,11 +159,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.55
-  m_Speed: 0
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 3
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -188,3 +171,23 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &166399058076168160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122492250576921123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e159342594a9274449d8fc48b75c21d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  facePlayerFactor: 20
+  patrolStartWaitTime: 3
+  chaseRadius: 1
+  lineOfSightRadius: 45
+  memoryStartTime: 10
+  eyeMaterialEnabled: {fileID: 2100000, guid: 970ba34de172eff40a28f998a5122ace, type: 2}
+  eyeMaterialDisabled: {fileID: 2100000, guid: 52e32544c191d5b43928d2d1ec52ade8, type: 2}
