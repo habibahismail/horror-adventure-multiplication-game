@@ -17,6 +17,6 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: ca77e59e54f72c54482a9d8b684ed7f5, type: 3}
   description: "It's good that this old flashlight is actually working. \n\n\n\nPress
     'F' button to switch it on and off."
-  quantity: 0
+  quantity: 1
   isUsable: 0
   isBattleItem: 0

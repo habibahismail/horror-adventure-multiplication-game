@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace gameBeba
 {
+    /**
+     * TODO: add timer for prefect bear.
+     * 
+     */
 
     public class BattleManager : MonoBehaviour
     {
@@ -52,11 +56,14 @@ namespace gameBeba
             if (battleUIon == false && battleEnded == true && GameManager.Instance.isPaused == false &&
                 GameManager.Instance.isInteracting == false )
             {
-                if (playerData.currentPlayerData.health > 0) {
+                battleEnded = false;
+
+                if (playerData.currentPlayerData.health > 0 && battleEnded == false) {
 
                     playerData.EnablePlayer(true);
-                    currentEnemy.GetComponent<Enemy>().DisableEnemy(20f);
+                    currentEnemy.GetComponent<EnemyAI>().DisableEnemy();
                     ui.ShowBattleUI(false);
+
                 }
                 else
                 {
@@ -114,6 +121,7 @@ namespace gameBeba
             }else
             {
                 battleEnded = true;
+
                 GameManager.Instance.isBattling = false;
                 GameManager.Instance.isInteracting = false;
                 GameManager.Instance.lockPauseMenu = false;

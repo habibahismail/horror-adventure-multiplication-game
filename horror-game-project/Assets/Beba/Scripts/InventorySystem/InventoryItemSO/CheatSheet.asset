@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6ad4efa26127141479cfab0bcefc1ac4
   name: Cheat Sheet
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: a6ffa93bbd62b694b9e0f4fc3d1d2616, type: 3}
   description: 'Use this item to skip one question from Student Bunnies or the Bear
     Prefects.
 
 
     Use wisely since this items is limited and can be found around the school.'
-  quantity: 4
+  quantity: 8
   isUsable: 0
   isBattleItem: 1
