@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 namespace gameBeba
@@ -82,7 +80,7 @@ namespace gameBeba
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.tag == "Player")
+            if (other.CompareTag("Player"))
             {
                 isCollideWithPlayer = true;
                 battleManager.SetCurrentEnemy(this.gameObject);

@@ -123,14 +123,18 @@ namespace gameBeba
                         ui.SetDialogsSubsText(dialogResponseText);
                         Invoke("DialogResponseOff", responds[index].time);
 
+                        Debug.Log("[OpenDoor] Index before = " + index);
+
                         if (index < responds.Length - 1)
                         {
                             index++;
                         }
                         else
                         {
-                            index = responds.Length - 2;
+                            index = 0;
                         }
+
+                        Debug.Log("[OpenDoor] Index after = " + index);
 
                     }
                 }
